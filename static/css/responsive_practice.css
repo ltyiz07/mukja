@@ -1,0 +1,89 @@
+* { box-sizing: border-box }
+
+header {
+    background-color: yellow;
+    position: fixed;
+    display: block;
+    width: 100%;
+    z-index: 100;
+}
+header ul {
+    height: 4rem;
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+}
+header li {
+    size: 100%;
+    float: left;
+    text-align: center;
+    display: block;
+    /* clear: right; */
+}
+.last-li {
+    float: right;
+}
+
+.dropdown {
+    display: relative;
+}
+.dropdown-content {
+    position: absolute;
+    display: none;
+}
+.dropdown:hover .dropdown-content {
+    position: absolute;
+    display: block;
+}
+.dropdown:hover .dropdown-content a {
+    background-color: red;
+    color: yellow;
+}
+.dropdown:hover .dropdown-content a:hover {
+    background-color: black;
+    color: red;
+}
+
+
+header a {
+    display: block;
+    padding: 1rem;
+    border: 0;
+    text-decoration: none;
+    background-color: yellow;
+}
+header a:hover {
+    background-color: black;
+}
+header a:visited {
+    color: red;
+}
+
+section {
+    padding-top: 4rem;
+    position: relative;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    height: 99vh;
+    width: 70%;
+    float: left;
+
+}
+
+aside {
+    padding-top: 4rem;
+    position: relative;
+    display: block;
+    background-color: green;
+    width: 30%;
+    z-index: 50;
+    float: right;
+    height: 99vh;
+}
+
+footer {
+    background-color: red;
+}
